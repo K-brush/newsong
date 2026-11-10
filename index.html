@@ -19,7 +19,7 @@ main{max-width:560px;width:100%;text-align:center}
 .bar{width:44px;height:3px;background:var(--seal);margin:0 auto 32px}
 h1{font-size:clamp(44px,13vw,84px);font-weight:700;letter-spacing:.14em;margin:0 0 14px;padding-left:.14em;line-height:1.1}
 .sub{font-style:italic;font-weight:500;color:var(--sub);font-size:clamp(20px,5vw,26px);letter-spacing:.06em;margin:0 0 44px}
-.skip{color:var(--ink);font-size:19px;text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px}
+.skip{display:inline-block;padding:10px 4px;color:var(--ink);font-size:19px;text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px}
 .skip:hover,.skip:focus-visible{border-color:var(--seal);outline:none}
 </style>
 </head>
@@ -28,13 +28,13 @@ h1{font-size:clamp(44px,13vw,84px);font-weight:700;letter-spacing:.14em;margin:0
   <div class="bar" aria-hidden="true"></div>
   <h1>NEW SONG</h1>
   <p class="sub">rewritten hymn</p>
-  <a class="skip" href="https://app.notion.com/p/k-brush/39606fc3f79c80dd95bcfe6475968c6f" target="_blank" rel="noopener">Read the lyrics →</a>
+  <a class="skip" href="https://app.notion.com/p/k-brush/39606fc3f79c80dd95bcfe6475968c6f">Read the lyrics →</a>
 </main>
 <script>
 var u="https://app.notion.com/p/k-brush/39606fc3f79c80dd95bcfe6475968c6f";
 var top_level=false;
 try{top_level=(window.top===window.self);}catch(e){}
-if(top_level){setTimeout(function(){window.location.href=u;},2500);}
+if(top_level&&!/KAKAOTALK/i.test(navigator.userAgent)){setTimeout(function(){window.location.href=u;},2500);}
 </script>
 </body>
 </html>
